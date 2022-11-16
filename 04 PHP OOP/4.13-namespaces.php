@@ -28,3 +28,22 @@ $table->numRows = 5;
 $table->message();          // voer public function message uit met de variable table als invoer
 ?>
 </body>
+
+<?php
+$table = new Html\Table2();
+$row = new HTML\Row2();
+
+namespace Html3;                // Bij meerdere variables kan je het beter bovenaan doen
+$table = new Table();
+$row = new Row();
+
+// Giving a namespace an Alias
+
+use Html as H;
+$table = new H\Table();
+
+// Giving a class an Alias
+use Html\Table as T;
+$table = new T();
+
+?>
